@@ -1,5 +1,4 @@
-import { useThree, extend, useFrame } from "@react-three/fiber"
-import { useRef } from 'react'
+import { useThree, extend } from "@react-three/fiber"
 import { OrbitControls } from "three/examples/jsm/Addons.js"
 
 extend({OrbitControls})
@@ -7,13 +6,14 @@ extend({OrbitControls})
 export default function Experience()
 {
     const {camera, gl} = useThree()
-    const cubeRef = useRef()
-
-    return <> 
+    return <group> 
         <orbitControls args={[camera, gl.domElement]}/>
-        <mesh ref={cubeRef}>
+        <mesh>
             <boxGeometry />
             <meshBasicMaterial color="red"/>
         </mesh>
-    </>
+    </group>
 }
+
+// Render updates for free
+// Camera positioning and intrinsics for free
