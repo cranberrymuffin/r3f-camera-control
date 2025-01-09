@@ -1,5 +1,4 @@
 # r3f-camera-control
 use mouse interaction to rotate a cube in r3f (react three fiber)
 
-https://github.com/user-attachments/assets/7775f1a7-af3c-4508-ab6f-b64232098c30
-
+![ScreenRecording2025-01-09at11 41 34AM-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/6295bf8f-9168-4925-a02b-252e60503186)
