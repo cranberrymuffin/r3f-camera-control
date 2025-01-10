@@ -6,6 +6,7 @@ const root = ReactDOM.createRoot(document.querySelector('#root'))
 
 root.render(
     <Canvas>
+        <color attach="background" args={["black"]} /> 
         <Experience />
     </Canvas>
 )
