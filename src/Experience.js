@@ -1,13 +1,9 @@
-import { useThree, extend } from "@react-three/fiber"
-import { OrbitControls } from "three/examples/jsm/Addons.js"
-
-extend({OrbitControls})
+import { OrbitControls } from "@react-three/drei"
 
 export default function Experience()
 {
-    const {camera, gl} = useThree()
     return <group> 
-        <orbitControls args={[camera, gl.domElement]}/>
+        <OrbitControls/>
         <mesh>
             <boxGeometry />
             <meshBasicMaterial color="red"/>
